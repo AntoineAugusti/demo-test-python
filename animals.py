@@ -8,7 +8,6 @@ class Animal(object):
 
     def __init__(self, name, the_type):
         super(Animal, self).__init__()
-        self.name = name.title()
         if the_type not in self.ALL_TYPES:
             template = 'Cannot create an animal of type: `{type}`'
             raise ValueError(template.format(type=the_type))
